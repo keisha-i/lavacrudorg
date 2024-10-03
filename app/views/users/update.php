@@ -31,7 +31,7 @@
             <label for="address">Address:</label>
             <input type="text" class="form-control" id="address" name="address" value="<?=$ui['kjur_address'];?>">
             </div>
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-success">Update</button>
         </form>
     </div> 
 </body>

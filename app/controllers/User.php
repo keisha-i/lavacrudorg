@@ -12,7 +12,7 @@ class User extends Controller {
     public function read() {
 
         $data ['users'] = $this->users_model->read();
-        $data ['name'] = "LavaLust Framework";
+        $data ['name'] = "LavaLust CRUD";
         $this->call->view('users/display', $data);
     }
 

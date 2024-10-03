@@ -31,8 +31,8 @@
             <label for="address">Address:</label>
             <input type="text" class="form-control" id="address" name="address">
             </div>
-            <button type="submit" class="btn btn-primary">Add</button>
-            <a class="btn btn-primary mb-0.5" role="button" href="<?=site_url('users/read');?>">Show Users</a>
+            <button type="submit" class="btn btn-warning">Add</button>
+            <a class="btn btn-success mb-0.5" role="button" href="<?=site_url('users/read');?>">Show Users</a>
         </form>
     </div> 
 </body>
