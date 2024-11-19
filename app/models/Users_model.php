@@ -40,5 +40,6 @@ class Users_model extends Model {
     public function delete($id) {
         return $this->db->table('kjur_users')->where('id', $id)->delete();
     }
+
 }
 ?>
