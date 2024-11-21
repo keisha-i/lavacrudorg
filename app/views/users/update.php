@@ -8,38 +8,45 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="container mt-3">
-        <h2>Update</h2>
-        <?php flash_alert(); ?>
-        
-        <!-- Form for updating user data -->
-        <form id="updateForm">
-            <input type="hidden" id="user_id" name="user_id" value="<?=$ui['id'];?>">
-            <div class="mb-3 mt-3">
-                <label for="lastname">Last Name:</label>
-                <input type="text" class="form-control" id="lastname" name="lastname" value="<?=$ui['kjur_last_name'];?>">
-            </div>
-            <div class="mb-3">
-                <label for="firstname">First Name:</label>
-                <input type="text" class="form-control" id="firstname" name="firstname" value="<?=$ui['kjur_first_name'];?>">
-            </div>
-            <div class="mb-3 mt-3">
-                <label for="email">Email:</label>
-                <input type="text" class="form-control" id="email" name="email" value="<?=$ui['kjur_email'];?>">
-            </div>
-            <div class="mb-3 mt-3">
-                <label for="gender">Gender:</label>
-                <input type="text" class="form-control" id="gender" name="gender" value="<?=$ui['kjur_gender'];?>">
-            </div>
-            <div class="mb-3 mt-3">
-                <label for="address">Address:</label>
-                <input type="text" class="form-control" id="address" name="address" value="<?=$ui['kjur_address'];?>">
-            </div>
-            <button type="submit" class="btn btn-success">Update</button>
-        </form>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Update</h2>
+                <?php flash_alert(); ?>
+                
+                <!-- Form Container -->
+                <div class="card shadow-sm p-4">
+                    <form id="updateForm">
+                        <input type="hidden" id="user_id" name="user_id" value="<?=$ui['id'];?>">
+                        <div class="mb-3">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" value="<?=$ui['kjur_last_name'];?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" value="<?=$ui['kjur_first_name'];?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="email" name="email" value="<?=$ui['kjur_email'];?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gender">Gender:</label>
+                            <input type="text" class="form-control" id="gender" name="gender" value="<?=$ui['kjur_gender'];?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address">Address:</label>
+                            <input type="text" class="form-control" id="address" name="address" value="<?=$ui['kjur_address'];?>">
+                        </div>
+                        <button type="submit" class="btn btn-success">Update</button>
+                    </form>
+                </div>
 
-        <div id="responseMessage" style="margin-top: 20px;"></div>
-    </div> 
+                <!-- Response Message Container -->
+                <div id="responseMessage" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
 
     <script>
         $(document).ready(function() {
